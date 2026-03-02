@@ -74,15 +74,15 @@
             
             <!--Form-->
             <div class="w-full max-w-sm mx-auto md:mx-0">
-                <div class="">
+                <form class="">
                     <fieldset class="fieldset ">
-                        <input type="email" class="input mb-4" placeholder="Enter Your Name" />
+                        <input type="email" class="input mb-4" placeholder="Enter Your Name" autocomplete="username"/>
 
-                        <input type="password" class="input" placeholder="......." />
+                        <input type="password" class="input" placeholder="......." autocomplete="current-password"/>
                         <button class="btn btn-primary mt-4 w-[130px]">Get Started</button>
                     </fieldset>
                     
-                </div>
+                </form>
             </div>
         </div>
 
@@ -91,11 +91,13 @@
         </div>
     </section>
 
-    <section>
+    <section class="mb-5">
         <h2 class="text-4xl font-bold mb-4 text-center"><span class="text-sky-500">Let's</span> Learn Vocabularies</h2>
 
-        <div class="level-container"></div>
+        <div id="level-container" class="flex gap-5 flex-wrap justify-center"></div>
     </section> 
+
+    <section id="word-container" class="bg-gray-100 p-10 w-11/12 mx-auto my-10 grid md:grid-cols-2 lg:grid-cols-3"></section>
 
     <!--JS-->
     <script src="./script.js"></script>
